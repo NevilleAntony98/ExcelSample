@@ -1,15 +1,17 @@
-function printData(){
-  var data;
+var data = {
+  title: 'foo',
+  body: 'bar',
+  userId: 1
+}
+function printData(data){
 	fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST', 
   headers: {
-    'Content-Type': 'application/json'
+    "Content-type": "application/json; charset=UTF-8"
   },
   body: JSON.stringify(data)
   })
-  .then(res => res.json())
-  .then(response => window.alert(JSON.stringify(response)))
+  .then(response => response.json())
+  .then(json => window.alert(JSON.stringify(json)))
   .catch(error => console.error('Error:', error));
 }
-
-
