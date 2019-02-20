@@ -1,0 +1,51 @@
+body {
+    background-image: url(background.jpeg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: roboto;
+}
+
+.signupform {
+    border-radius: 10px;
+    text-align: center;
+    background-color: ;
+    margin: 10vh 10vw 0vh 10vw; 
+/*    margin: 7% 25% 10% 25%; */
+}   
+
+#signup > input {
+    padding: 2vh;
+    margin: 1vh;
+    border: 1px solid #000000 ;
+    border-radius: 5px;
+}
+
+#signuptitle {
+    color: #1DE9B6;
+    font-size: 7vh;
+    padding: 5% 0% 0% 0%;
+}
+#connectg {
+    background-color: #F44336;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 1.5vh;
+    margin: 1vh;
+    display: inline-block;
+}
+
+#submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 2vh;
+    margin: 1% 0% 3% 0%;;
+    display: inline-block;
+    min-width: 8vw;
+    font-weight: bold;
+    font-size: 110%;
+}
