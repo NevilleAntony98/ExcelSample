@@ -6,6 +6,8 @@
     <title>Excel 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400" rel="stylesheet">
+    
     <script src="main.js"></script>
 </head>
 <body onload="window.alert('Hint: Click signup!')">
@@ -15,7 +17,8 @@
             <input type="text" name="username" id="username" placeholder="Username" required><br>
             <input type="password" name="password" id="password" placeholder="Password" required><br>
             <input type="email" name="email" id="email" placeholder="Email" required><br>
-            <input type="checkbox" name="rememberme" id="rememberme">Keep me logged in<br><br>
+            <input type="tel" name="phno" id="phno" placeholder="Contact Number"><br><br>
+            <input type="checkbox" name="rememberme" id="rememberme">Keep me logged in<br>
             <button type="button" name="connectg" id="connectg">Connect with Google</button><br>
             <button type="submit" onclick="printData()" name="submit" id="submit">Sign Up</button>
         </form>

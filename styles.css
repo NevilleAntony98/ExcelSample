@@ -4,28 +4,35 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    font-family: roboto;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .signupform {
     border-radius: 10px;
     text-align: center;
     background-color: ;
-    margin: 10vh 10vw 0vh 10vw; 
-/*    margin: 7% 25% 10% 25%; */
+    margin: 0vh 10vw 0vh 10vw; 
+    font-family: 'Noto Sans TC', sans-serif;
 }   
 
 #signup > input {
     padding: 2vh;
-    margin: 1vh;
+    margin: 0.5vh;
     border: 1px solid #000000 ;
     border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#username, #password, #email, #phno {
+    min-width: 25vw;
 }
 
 #signuptitle {
     color: #1DE9B6;
     font-size: 7vh;
-    padding: 5% 0% 0% 0%;
+    padding: 3vh 0% 0% 0%;
+    font-weight: bold;
+    letter-spacing: 1vw;
 }
 #connectg {
     background-color: #F44336;
@@ -35,17 +42,34 @@ body {
     padding: 1.5vh;
     margin: 1vh;
     display: inline-block;
+    min-width: 4vw;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 #submit {
     background-color: #4CAF50;
     border: none;
     color: white;
-    border-radius: 2px;
-    padding: 2vh;
+    border-radius: 25px;
+    padding: 2vh 4vh 2vh 4vh;
     margin: 1% 0% 3% 0%;;
     display: inline-block;
-    min-width: 8vw;
+    min-width: 2vw;
     font-weight: bold;
     font-size: 110%;
+    font-family: 'Noto Sans TC', sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+    #username, #password, #email, #phno {
+        min-width: 60vw;
+    }
+    
+    #connectg {
+        min-width: 55vw;
+    }
+
+    #submit {
+        min-width: 60vw;
+    }
+  }
