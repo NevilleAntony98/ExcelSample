@@ -3,6 +3,7 @@ var data = {
   body: 'bar',
   userId: 1
 }
+var temp;
 function printData(data){
 	fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST', 
@@ -12,6 +13,8 @@ function printData(data){
   body: JSON.stringify(data)
   })
   .then(response => response.json())
-  .then(json => window.alert(JSON.stringify(json)))
+  .then(json => temp = json)
+  .then(json => window.alert(JSON.stringify(temp)))
+  .then(json => console.log(temp))
   .catch(error => console.error('Error:', error));
 }
