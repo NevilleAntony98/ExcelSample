@@ -1,16 +1,18 @@
-var data;
-var temp;
-function printData(data){
+function submitData(){
+  let title = document.getElementById('username').value;
+  let body = document.getElementById('comment').value;
+
 	fetch('https://jsonplaceholder.typicode.com/posts', {
   method: 'POST', 
   headers: {
     "Content-type": "application/json; charset=UTF-8"
   },
-  body: JSON.stringify(data)
+  body: JSON.stringify({title:title, body:body})
   })
   .then(response => response.json())
-  .then(json => temp = json)
-  .then(json => window.alert(JSON.stringify(temp)))
-  .then(json => console.log("SUCCESS: " + JSON.stringify(temp)))
+  .then(data => {
+    window.alert(JSON.stringify(data));
+    console.log(data);
+  })
   .catch(error => console.error('Error:', error));
 }

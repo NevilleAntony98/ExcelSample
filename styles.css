@@ -7,10 +7,18 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+#comment {
+    min-width: 25vw;   
+    resize: none;
+    padding: 2vh;
+    margin: 0.5vh;
+    border: 1px solid #000000 ;
+    border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 .signupform {
-    border-radius: 10px;
     text-align: center;
-    background-color: ;
     margin: 0vh 10vw 0vh 10vw; 
     font-family: 'Noto Sans TC', sans-serif;
 }   
@@ -71,5 +79,15 @@ body {
 
     #submit {
         min-width: 60vw;
+    }
+
+    #comment {
+        min-width: 60vw;   
+        resize: none;
+        padding: 2vh;
+        margin: 0.5vh;
+        border: 1px solid #000000 ;
+        border-radius: 5px;
+        font-family: 'Noto Sans TC', sans-serif;
     }
   }
